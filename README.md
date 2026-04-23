@@ -15,7 +15,7 @@ A curated collection of [Claude Code](https://docs.anthropic.com/claude-code) pl
 ### Add this marketplace
 
 ```bash
-/plugin marketplace add https://github.com/pingus74/claude-marketplace
+/plugin marketplace add https://github.com/Pingus74/claude-marketplace
 ```
 
 Or from a local checkout:
