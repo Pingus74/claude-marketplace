@@ -1,0 +1,65 @@
+<ac:structured-macro ac:name="toc" ac:schema-version="1">
+  <ac:parameter ac:name="maxLevel">3</ac:parameter>
+</ac:structured-macro>
+
+<h2>Panoramica</h2>
+<p>{{OVERVIEW}}</p>
+
+<h2>Componenti coinvolti</h2>
+<table>
+  <tbody>
+    <tr><th>Pacchetto / modulo</th><th>Ruolo</th><th>Path</th></tr>
+    <tr><td><code></code></td><td></td><td><code></code></td></tr>
+  </tbody>
+</table>
+
+<h2>Flusso end-to-end</h2>
+<p>{{FLOW_DESCRIPTION}}</p>
+
+<ac:structured-macro ac:name="code" ac:schema-version="1">
+  <ac:parameter ac:name="language">plain</ac:parameter>
+  <ac:parameter ac:name="title">Diagramma sequenza</ac:parameter>
+  <ac:plain-text-body><![CDATA[
+Step 1 → Step 2 → Step 3
+]]></ac:plain-text-body>
+</ac:structured-macro>
+
+<h2>Eventi, listener e job</h2>
+<table>
+  <tbody>
+    <tr><th>Evento</th><th>Dispatcher</th><th>Handler</th><th>Async?</th></tr>
+    <tr><td><code></code></td><td><code></code></td><td><code></code></td><td></td></tr>
+  </tbody>
+</table>
+
+<h2>Storage e dati</h2>
+<table>
+  <tbody>
+    <tr><th>Tabella / modello</th><th>Scopo</th><th>Note</th></tr>
+    <tr><td><code></code></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<h2>Configurazione</h2>
+<table>
+  <tbody>
+    <tr><th>Chiave</th><th>Valore / default</th><th>Scopo</th></tr>
+    <tr><td><code></code></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<h2>Gotchas e limiti noti</h2>
+<ol>
+  <li></li>
+</ol>
+
+<h2>Riferimenti</h2>
+<ul>
+  <li>Codice: <code>{{CODE_PATH}}</code></li>
+  <li>Issue Jira:
+    <ac:structured-macro ac:name="jira" ac:schema-version="1">
+      <ac:parameter ac:name="key">{{JIRA_KEY}}</ac:parameter>
+    </ac:structured-macro>
+  </li>
+  <li>Documentazione correlata: </li>
+</ul>

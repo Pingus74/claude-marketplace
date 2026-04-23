@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "pingus74-claude-marketplace",
+  "description": "Claude Code plugins collection by Stefano Grechi",
+  "version": "0.1.0",
+  "owner": {
+    "name": "Stefano Grechi",
+    "email": "stefano.grechi@coverzen.it"
+  },
+  "plugins": [
+    {
+      "name": "confluence-cli",
+      "description": "Read, create, update, search, and attach files to Confluence Cloud pages via the v2 REST API. Cross-platform Python 3 stdlib only.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Stefano Grechi",
+        "email": "stefano.grechi@coverzen.it"
+      },
+      "source": "./plugins/confluence-cli",
+      "category": "documentation",
+      "experimental": true
+    }
+  ]
+}

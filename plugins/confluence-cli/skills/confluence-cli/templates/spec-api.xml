@@ -1,0 +1,77 @@
+<ac:structured-macro ac:name="toc" ac:schema-version="1">
+  <ac:parameter ac:name="maxLevel">3</ac:parameter>
+</ac:structured-macro>
+
+<h2>Overview</h2>
+<p>{{OVERVIEW}}</p>
+
+<h2>Endpoint</h2>
+<table>
+  <tbody>
+    <tr><th>Method</th><td>{{METHOD}}</td></tr>
+    <tr><th>URI</th><td><code>{{URI}}</code></td></tr>
+    <tr><th>Auth</th><td>{{AUTH}}</td></tr>
+    <tr><th>Gate / permission</th><td>{{GATE}}</td></tr>
+    <tr><th>Route name</th><td><code>{{ROUTE_NAME}}</code></td></tr>
+  </tbody>
+</table>
+
+<h2>Request</h2>
+<h3>Fields</h3>
+<table>
+  <tbody>
+    <tr><th>Field</th><th>Type</th><th>Required</th><th>Notes</th></tr>
+    <tr><td><code></code></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<h3>Example</h3>
+<ac:structured-macro ac:name="code" ac:schema-version="1">
+  <ac:parameter ac:name="language">json</ac:parameter>
+  <ac:parameter ac:name="title">Request body</ac:parameter>
+  <ac:plain-text-body><![CDATA[{
+}]]></ac:plain-text-body>
+</ac:structured-macro>
+
+<h2>Response</h2>
+
+<h3>200 OK</h3>
+<ac:structured-macro ac:name="code" ac:schema-version="1">
+  <ac:parameter ac:name="language">json</ac:parameter>
+  <ac:plain-text-body><![CDATA[{
+}]]></ac:plain-text-body>
+</ac:structured-macro>
+
+<h3>Fields</h3>
+<table>
+  <tbody>
+    <tr><th>Field</th><th>Type</th><th>Notes</th></tr>
+    <tr><td><code></code></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<h2>Errors</h2>
+<table>
+  <tbody>
+    <tr><th>Status</th><th>Meaning</th><th>Cause</th></tr>
+    <tr><td>401</td><td>Unauthenticated</td><td>Missing or invalid token</td></tr>
+    <tr><td>403</td><td>Forbidden</td><td>Gate rule denied</td></tr>
+    <tr><td>404</td><td>Not Found</td><td></td></tr>
+    <tr><td>422</td><td>Validation failed</td><td>Invalid payload</td></tr>
+  </tbody>
+</table>
+
+<h2>Implementation references</h2>
+<ul>
+  <li>Controller: <code>{{CONTROLLER_PATH}}</code></li>
+  <li>FormRequest: <code>{{REQUEST_PATH}}</code></li>
+  <li>Resource: <code>{{RESOURCE_PATH}}</code></li>
+  <li>Route: <code>{{ROUTE_FILE}}</code></li>
+</ul>
+
+<h2>Note</h2>
+<ac:structured-macro ac:name="info" ac:schema-version="1">
+  <ac:rich-text-body>
+    <p>{{NOTES}}</p>
+  </ac:rich-text-body>
+</ac:structured-macro>

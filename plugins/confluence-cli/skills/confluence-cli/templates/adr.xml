@@ -1,0 +1,39 @@
+<h2>Status</h2>
+<ac:structured-macro ac:name="status" ac:schema-version="1">
+  <ac:parameter ac:name="colour">Yellow</ac:parameter>
+  <ac:parameter ac:name="title">PROPOSED</ac:parameter>
+</ac:structured-macro>
+
+<p><strong>Date</strong>: {{DATE}}<br/>
+<strong>Deciders</strong>: {{DECIDERS}}</p>
+
+<h2>Context</h2>
+<p>{{CONTEXT}}</p>
+
+<h2>Decision</h2>
+<p>{{DECISION}}</p>
+
+<h2>Consequences</h2>
+
+<h3>Positive</h3>
+<ul>
+  <li></li>
+</ul>
+
+<h3>Negative / trade-offs</h3>
+<ul>
+  <li></li>
+</ul>
+
+<h2>Alternatives considered</h2>
+<table>
+  <tbody>
+    <tr><th>Alternative</th><th>Pros</th><th>Cons</th><th>Rejected because</th></tr>
+    <tr><td></td><td></td><td></td><td></td></tr>
+  </tbody>
+</table>
+
+<h2>References</h2>
+<ul>
+  <li></li>
+</ul>

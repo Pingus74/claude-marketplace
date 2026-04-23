@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# macOS
+.DS_Store
+
+# Editors / IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Credentials — must never live in the repo
+.atlassian-token
+.env
+*.pem
+*.key
+
+# Local artefacts
+*.log
+tmp/
