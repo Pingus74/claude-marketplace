@@ -13,7 +13,7 @@ A curated collection of [Claude Code](https://docs.anthropic.com/claude-code) pl
 ### Add this marketplace
 
 ```bash
-/plugin marketplace add https://github.com/Pingus74/claude-marketplace
+/plugin marketplace add https://github.com/sgrechi/claude-marketplace
 ```
 
 Or from a local checkout:
@@ -25,7 +25,7 @@ Or from a local checkout:
 ### Install a plugin
 
 ```bash
-/plugin install confluence-cli@pingus74-claude-marketplace
+/plugin install confluence-cli@sgrechi-claude-marketplace
 ```
 
 ### Update the marketplace
@@ -38,7 +38,7 @@ Or from a local checkout:
 
 ```bash
 /plugin uninstall confluence-cli
-/plugin marketplace remove pingus74-claude-marketplace
+/plugin marketplace remove sgrechi-claude-marketplace
 ```
 
 ## Creating a new plugin

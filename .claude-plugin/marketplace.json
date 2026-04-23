@@ -1,6 +1,6 @@
 {
   "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
-  "name": "pingus74-claude-marketplace",
+  "name": "sgrechi-claude-marketplace",
   "description": "Claude Code plugins collection by Stefano Grechi",
   "version": "1.0.0",
   "owner": {

@@ -34,23 +34,23 @@ Le **operazioni di scrittura** (create/update/delete/upload) richiedono sempre l
 Nella chat di Claude Code:
 
 ```
-/plugin marketplace add https://github.com/Pingus74/claude-marketplace
+/plugin marketplace add https://github.com/sgrechi/claude-marketplace
 ```
 
 ### 2. Installa il plugin
 
 ```
-/plugin install confluence-cli@pingus74-claude-marketplace
+/plugin install confluence-cli@sgrechi-claude-marketplace
 ```
 
-Claude Code clonerà il plugin in `~/.claude/plugins/cache/pingus74-claude-marketplace/confluence-cli/<versione>/` e lo renderà disponibile come skill `confluence-cli`.
+Claude Code clonerà il plugin in `~/.claude/plugins/cache/sgrechi-claude-marketplace/confluence-cli/<versione>/` e lo renderà disponibile come skill `confluence-cli`.
 
 ### Update e uninstall
 
 ```
 /plugin marketplace update
-/plugin uninstall confluence-cli@pingus74-claude-marketplace
-/plugin marketplace remove pingus74-claude-marketplace
+/plugin uninstall confluence-cli@sgrechi-claude-marketplace
+/plugin marketplace remove sgrechi-claude-marketplace
 ```
 
 ### Uso in sviluppo (senza marketplace)
@@ -59,7 +59,7 @@ Se stai sviluppando il plugin e vuoi testarlo senza passare da GitHub:
 
 ```
 /plugin marketplace add /path/locale/al/checkout/claude-marketplace
-/plugin install confluence-cli@pingus74-claude-marketplace
+/plugin install confluence-cli@sgrechi-claude-marketplace
 ```
 
 ---
