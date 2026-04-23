@@ -42,10 +42,11 @@ def load_credentials() -> tuple[str, str, str]:
                               ("ATLASSIAN_SITE", site),
                               ("ATLASSIAN_API_TOKEN", token)) if not v]
     if missing:
+        setup_path = Path(__file__).resolve().with_name("setup.py")
         sys.stderr.write(
             "Credentials missing: " + ", ".join(missing) + "\n"
-            "Run: python3 ~/.claude/skills/confluence-cli/scripts/setup.py\n"
-            "Or export the env vars for a one-off invocation.\n"
+            f"Run: python3 '{setup_path}'\n"
+            "Or export env vars: ATLASSIAN_EMAIL, ATLASSIAN_SITE, ATLASSIAN_API_TOKEN\n"
         )
         sys.exit(2)
     return email, site, token  # type: ignore[return-value]
@@ -140,9 +141,28 @@ def cmd_list_children(args, email: str, site: str, token: str) -> None:
 
 
 def cmd_list_folder(args, email: str, site: str, token: str) -> None:
-    url = (f"https://{site}/wiki/api/v2/folders/{args.folder_id}/children"
-           f"?limit={args.limit}")
-    print_json(http_request("GET", url, email, token))
+    base = f"https://{site}/wiki/rest/api/content/{args.folder_id}/child"
+    pages = http_request("GET", f"{base}/page?limit={args.limit}", email, token)
+    folders = http_request("GET", f"{base}/folder?limit={args.limit}", email, token)
+
+    def simplify(collection: Any, kind: str) -> list[dict[str, Any]]:
+        items: list[dict[str, Any]] = []
+        for r in (collection or {}).get("results", []):
+            items.append({
+                "id": r.get("id"),
+                "type": kind,
+                "title": r.get("title"),
+                "webui": (r.get("_links") or {}).get("webui"),
+            })
+        return items
+
+    result = {
+        "folder_id": args.folder_id,
+        "pages": simplify(pages, "page"),
+        "folders": simplify(folders, "folder"),
+    }
+    result["total"] = len(result["pages"]) + len(result["folders"])
+    print_json(result)
 
 
 def cmd_search(args, email: str, site: str, token: str) -> None:

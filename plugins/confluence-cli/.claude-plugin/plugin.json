@@ -1,7 +1,7 @@
 {
   "name": "confluence-cli",
   "description": "Read, create, update, search, and attach files to Confluence Cloud pages via the v2 REST API. Cross-platform Python 3 stdlib only.",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "author": {
     "name": "Stefano Grechi",
     "email": "stefano.grechi@coverzen.it"

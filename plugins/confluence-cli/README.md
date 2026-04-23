@@ -200,7 +200,7 @@ plugins/confluence-cli/
 
 ## Versione
 
-**0.1.1** — experimental. Supporto read/write/search/attachments; Python 3 stdlib only; cross-platform.
+**1.0.0** — stabile. Supporto read/write/search/attachments; tutti gli 11 comandi esercitati in test end-to-end contro Confluence Cloud; Python 3 stdlib only; cross-platform.
 
 ## Maintainer
 
